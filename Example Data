@@ -1,61 +1,61 @@
 -- Player
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',1,1);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (2,'Awesome Smelling Sushi','meangreengiant@gmail.com','3rdDegBurnz','2001-05-11',60,150,'Light','F',2,2);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (3,'Kitty Hunter','mikehawk@myspace.com','RU4Reel','1969-04-20',69,199,'Light','M',3,3);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (4,'La Pissed','geemale@gmail.com','123Penguinz','1999-11-29',99,199,'Dark','M',4,4);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (5,'Lonely Girl 16','definitelyagirl@gmail.com','ImaGuyT33H33','2006-02-12',16,55,'Light','F',5,5);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (6,'Clever Name','iambrokelol@yahoo.com','$WouldB3N!ce','1985-01-01',31,62,'Dark','F',6,6);
 
-INSERT INTO `mobilerpg`.`player’ (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',' ',1);
+VALUES (7,'The Real Slim Shady','emineminem@yahoo.com','M&MizM3','1972-10-17',8,33,'Dark','M',7,7);
 
 
 -- Inventory
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (1,1,21,3,33,5,11,50);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (2,2,1,1,5,8,3);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (3,3,10,8,33);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (4,4,12,15,33,25,11,50,3);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (5,5,11,20,3,11,25);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (6,6,2,18,33,3);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,41,5,11,50,,);
+VALUES (7,7,9,2,33,5,11,50,25);
 
 
 -- Appearance
@@ -65,54 +65,294 @@ VALUES (1,3,5,1,7,7);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (2,2,2,2,2,2);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (3,1,5,3,6,4);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (4,6,5,2,3,2);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (5,7,1,6,3,4);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (6,6,6,4,1,2);
 
 INSERT INTO `mobilerpg`.`appearance` (`appearance_id`,`headtype`,`torsotype`,`legtype`,`skintone`,`bodytype`) 
 
-VALUES (1,3,5,1,7,7);
+VALUES (7,5,3,2,6,5);
 
 
 -- Location
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (1,'Gruel Peak',4,3,1,1,'HOT_CAKES');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (2,'Elmhark Forest',3,1,2,2,'COLD_CAKES');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (3,'Dragon Smoke',1,4,3,3,'2HOT2HANDLE');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (4,'Wicker Falls',5,2,4,4,'SLASHED_PRICES');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (5,'Coobim Cape',7,5,5,5,'QUEST4GOLD');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (6,'Dirt Holm',2,7,6,6,'ENCHANTED');
 
 INSERT INTO `mobilerpg`.`location` (`location_id`,`locationname`,`shop_id`,`enemy_id`,`boss_id`,`quest_id`,`deal`)
 
-VALUES (1, 'Gruel Peak', 4, 3, 1, 1, ' ');
+VALUES (7,'Howling Aisle',6,6,7,7,'FREE_EMERALDS');
+
+
+-- Item
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (3,'Amber Ring',15);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (5,'Whine Gourd',5);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (8,'Hemp Rope',10);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (11,'Dung Catcher',1);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (25,'Emerald Earring',100);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (33,'Cat Whistle',3);
+
+INSERT INTO `mobilerpg`.`item` (`item_id`,`item_name`,`sell_value`)
+
+VALUES (50,'Invisibility Cloak',80);
+
+
+-- Weapon
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (1,'Longsword',5,20,10);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (2,'Widow’s Wail',8,40,30);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (9,'Elon’s Bane',10,30,20);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (10,'Rusty Flail',3,3,3);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (11,'Giant’s Toothpick',8,25,12);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (12,'Longersword',7,15,15);
+
+INSERT INTO `mobilerpg`.`weapon` (`weapon_id`,`weapon_name`,`damage_amount`,`durability`,`sell_value`)
+
+VALUES (21,'AK-47',100,50,1);
+
+
+-- Armor
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (1,'Leather Armor',3,'Piercing','Fire',10,5);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (2,'Studded Armor',5,'Slashing','Ice',15,10);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (3,'Hide',7,'Slashing','Fire',20,10);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (8,'Scale Mail',10,'Crushing','Lightning',25,20);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (15,'Chain Mail',15,'Piercing','Lightning',30,25);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (18,'Dragon Plate',25,'Fire','Holy',50,30);
+
+INSERT INTO `mobilerpg`.`armor` (`armor_id`,`armor_name`,`defense_value`,`resistancetype`,`weaknesstype`,`durability`,`sell_value`)
+
+VALUES (20,'Mage Robes',1,'Radiant','Slashing',10,10);
+
+
+-- Boss
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (1,'Giant Enemy Crab',30,35,'Lightning','Water',10,'Crushing',10);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (2,'Shmorkin of Schmoob',50,85,'Poison','Slashing',15,'Holy',15);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (3,'Huge Jacked Man',70,100,'Fire','Crushing',30,'Bludgeoning',20);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (4,'The Stinkler',80,100,'Water','Poison',35,'Poison',25);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (5,'Catzilla',100,120,'Water','Lightning',50,'Slashing',35);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (6,'Golden Alpaca',150,200,'Piercing','Psychic',70,'Psychic',50);
+
+INSERT INTO `mobilerpg`.`boss` (`boss_id`,`boss_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (7,'God',300,500,'Necrotic','Holy',100,'Holy',100);
+
+
+-- Enemy
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (1,'Rat',1,1,'Fire','Poison',1,'Piercing',1);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (2,'Human Soldier',5,8,'Psychic','Slashing',5,'Piercing',3);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (3,'Goblin',10,5,'Fire','Poison',7,'Piercing',5);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (4,'Small Enemy Crab',2,2,'Lightning','Water',1,'Crushing',10);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (5,'Skeleton Warrior',15,20,'Holy','Necrotic',15,'Slashing',25);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (6,'Pink Slime',5,50,'Bludgeoning','Psychic',10,'Acid',50);
+
+INSERT INTO `mobilerpg`.`enemy` (`enemy_id`,`enemy_name`,`currency_value`,`HP`,`weakness`,`resistance`,`damage_value`,`damage_type`,`level`)
+
+VALUES (7,'Redditor',3,3,'Holy','Poison',1,'Bludgeoning',100);
+
+
+-- Shop
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (1,'Sewer Stand',1);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (2,'Fire Drake Shack',2);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (3,'Crystal Emporium',3);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (4,'Walmart',4);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (5,'Back Alley Deals',5);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (6,'Dirt Merchant’s Cart',6);
+
+INSERT INTO `mobilerpg`.`shop` (`shop_id`,`shop_name`,`npcs_id`)
+
+VALUES (7,'Dragon Bones Inc',7);
+
+
+-- NPC
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (1,'Rat Face','I’m tired of eating rats! I want cakes!',1);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (2,'The Choker','Find me a snake to choke!',2);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (3,'Cat Daddy','Can you help me find my kitty?',3);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (4,'Meat Lover','I’ve never had Goblin. I’d like some Goblin meat.',4);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (5,'The Friendly Goblin','I’ve never eaten human. I’d like to give it a try!',5);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (6,'Silent Knight','...',6);
+
+INSERT INTO `mobilerpg`.`npcs` (`npcs_id`,`npcs_name`,`speech_bubble`,`quest_id`)
+
+VALUES (7,'Kanye West','Hey, it’s Yeezus. I want fish. Preferably male.',7);
+
+
+-- Quest
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (1,'Let Me Eat Cakes',15,'Collect 5 Cakes');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (2,'Snake Search',5,'Catch a Snake');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (3,'Kitty Come Home',15,'Find the missing Cat');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (4,'Goblin Slayer',20,'Kill 20 Goblins');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (5,'The Most Dangerous Game',25,'Kill 20 Human Soldiers');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (6,'Tiptoe Through the Tulips',20,'Pick 5 Radiant White Tulips');
+
+INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
+
+VALUES (7,'Fishsticks',1,'Catch 5 Fish');
