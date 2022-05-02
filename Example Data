@@ -1,29 +1,29 @@
 -- Player
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',1,1);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (2,'Awesome Smelling Sushi','meangreengiant@gmail.com','3rdDegBurnz','2001-05-11',60,150,'Light','F',2,2);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (3,'Kitty Hunter','mikehawk@myspace.com','RU4Reel','1969-04-20',69,199,'Light','M',3,3);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (4,'La Pissed','geemale@gmail.com','123Penguinz','1999-11-29',99,199,'Dark','M',4,4);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (5,'Lonely Girl 16','definitelyagirl@gmail.com','ImaGuyT33H33','2006-02-12',16,55,'Light','F',5,5);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (6,'Clever Name','iambrokelol@yahoo.com','$WouldB3N!ce','1985-01-01',31,62,'Dark','F',6,6);
 
-INSERT INTO `mobilerpg`.`player` (`player_d`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
 
 VALUES (7,'The Real Slim Shady','emineminem@yahoo.com','M&MizM3','1972-10-17',8,33,'Dark','M',7,7);
 
