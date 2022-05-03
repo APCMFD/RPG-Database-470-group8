@@ -1,45 +1,45 @@
 -- Player
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'Dark','M',1,1);
+VALUES (1,'Dung Eater','lilbean@yahoo.com','K1LL3Rcl0wn$','1998-04-01',42,101,'D','M',1,1,6);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (2,'Awesome Smelling Sushi','meangreengiant@gmail.com','3rdDegBurnz','2001-05-11',60,150,'Light','F',2,2);
+VALUES (2,'Awesome Smelling Sushi','meangreengiant@gmail.com','3rdDegBurnz','2001-05-11',60,150,'L','F',2,2,7);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (3,'Kitty Hunter','mikehawk@myspace.com','RU4Reel','1969-04-20',69,199,'Light','M',3,3);
+VALUES (3,'Kitty Hunter','mikehawk@myspace.com','RU4Reel','1969-04-20',69,199,'L','M',3,3,2);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (4,'La Pissed','geemale@gmail.com','123Penguinz','1999-11-29',99,199,'Dark','M',4,4);
+VALUES (4,'La Pissed','geemale@gmail.com','123Penguinz','1999-11-29',99,199,'D','M',4,4,5);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (5,'Lonely Girl 16','definitelyagirl@gmail.com','ImaGuyT33H33','2006-02-12',16,55,'Light','F',5,5);
+VALUES (5,'Lonely Girl 16','definitelyagirl@gmail.com','ImaGuyT33H33','2006-02-12',16,55,'L','F',5,5,4);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (6,'Clever Name','iambrokelol@yahoo.com','$WouldB3N!ce','1985-01-01',31,62,'Dark','F',6,6);
+VALUES (6,'Clever Name','iambrokelol@yahoo.com','$WouldB3N!ce','1985-01-01',31,62,'D','F',6,6,3);
 
-INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`)
+INSERT INTO `mobilerpg`.`player` (`player_id`,`username`,`email`,`password`,`birthday`,`level`,`HP`,`alignment`,`gender`,`appearance_id`,`inventory_id`,`location_id`)
 
-VALUES (7,'The Real Slim Shady','emineminem@yahoo.com','M&MizM3','1972-10-17',8,33,'Dark','M',7,7);
+VALUES (7,'The Real Slim Shady','emineminem@yahoo.com','M&MizM3','1972-10-17',8,33,'D','M',7,7,1);
 
 
 -- Inventory
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (1,1,21,3,33,5,11,50);
+VALUES (1,1,21,3,33,5,11,50,null);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (2,2,1,1,5,8,3);
+VALUES (2,2,1,1,5,8,3,null,null);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (3,3,10,8,33);
+VALUES (3,3,10,8,33,null,null,null,null);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
@@ -47,11 +47,11 @@ VALUES (4,4,12,15,33,25,11,50,3);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (5,5,11,20,3,11,25);
+VALUES (5,5,11,20,3,11,25,null,null);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
-VALUES (6,6,2,18,33,3);
+VALUES (6,6,2,18,33,3,null,null,null);
 
 INSERT INTO `mobilerpg`.`inventory` (`inventory_id`,`player_id`,`weapon_id`,`armor_id`,`item_1`,`item_2`,`item_3`,`item_4`,`item_5`)
 
@@ -356,3 +356,111 @@ VALUES (6,'Tiptoe Through the Tulips',20,'Pick 5 Radiant White Tulips');
 INSERT INTO `mobilerpg`.`quest` (`quest_id`,`quest_name`,`currency_value`,`completion_condition`)
 
 VALUES (7,'Fishsticks',1,'Catch 5 Fish');
+
+ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `player_id`
+  FOREIGN KEY (`player_id`)
+  REFERENCES `mobilerpg`.`player` (`player_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `mobilerpg`.`player` 
+ADD CONSTRAINT `inventory_id`
+  FOREIGN KEY (`inventory_id`)
+  REFERENCES `mobilerpg`.`inventory` (`inventory_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`player` 
+ADD CONSTRAINT `appearance_id`
+  FOREIGN KEY (`appearance_id`)
+  REFERENCES `mobilerpg`.`appearance` (`appearance_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`player` 
+ADD CONSTRAINT `location_id`
+  FOREIGN KEY (`location_id`)
+  REFERENCES `mobilerpg`.`location` (`location_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `armor_id`
+  FOREIGN KEY (`armor_id`)
+  REFERENCES `mobilerpg`.`armor` (`armor_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `item_1`
+  FOREIGN KEY (`item_1`)
+  REFERENCES `mobilerpg`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `item_2`
+  FOREIGN KEY (`item_2`)
+  REFERENCES `mobilerpg`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+  ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `item_3`
+  FOREIGN KEY (`item_3`)
+  REFERENCES `mobilerpg`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `item_4`
+  FOREIGN KEY (`item_4`)
+  REFERENCES `mobilerpg`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `item_5`
+  FOREIGN KEY (`item_5`)
+  REFERENCES `mobilerpg`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`inventory` 
+ADD CONSTRAINT `weapon_id`
+  FOREIGN KEY (`weapon_id`)
+  REFERENCES `mobilerpg`.`weapon` (`weapon_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`location` 
+ADD CONSTRAINT `boss_id`
+  FOREIGN KEY (`boss_id`)
+  REFERENCES `mobilerpg`.`boss` (`boss_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`location` 
+ADD CONSTRAINT `enemy_id`
+  FOREIGN KEY (`enemy_id`)
+  REFERENCES `mobilerpg`.`enemy` (`enemy_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`location` 
+ADD CONSTRAINT `shop_id`
+  FOREIGN KEY (`shop_id`)
+  REFERENCES `mobilerpg`.`shop` (`shop_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`shop` 
+ADD CONSTRAINT `npcs_id`
+  FOREIGN KEY (`npcs_id`)
+  REFERENCES `mobilerpg`.`npcs` (`npcs_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+ALTER TABLE `mobilerpg`.`npcs` 
+ADD CONSTRAINT `quest_id`
+  FOREIGN KEY (`quest_id`)
+  REFERENCES `mobilerpg`.`quest` (`quest_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
