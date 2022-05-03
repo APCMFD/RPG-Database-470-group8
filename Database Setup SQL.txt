@@ -3,7 +3,7 @@ CREATE SCHEMA `mobilerpg` ;
 CREATE TABLE `mobilerpg`.`player` (
   `player_id` INT NOT NULL,
   `username` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(20) NULL,
+  `email` VARCHAR(30) NULL,
   `password` VARCHAR(25) NOT NULL,
   `birthday` DATETIME NULL,
   `level` INT NOT NULL DEFAULT 1,
@@ -35,25 +35,10 @@ CREATE TABLE `mobilerpg`.`inventory` (
   UNIQUE INDEX `inventory_id_UNIQUE` (`inventory_id` ASC) VISIBLE,
   UNIQUE INDEX `player_id_UNIQUE` (`player_id` ASC) VISIBLE);
 
-
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `player_id`
-  FOREIGN KEY (`player_id`)
-  REFERENCES `mobilerpg`.`player` (`player_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
-ALTER TABLE `mobilerpg`.`player` 
-ADD CONSTRAINT `inventory_id`
-  FOREIGN KEY (`inventory_id`)
-  REFERENCES `mobilerpg`.`inventory` (`inventory_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
 ALTER TABLE `mobilerpg`.`player` 
 CHANGE COLUMN `appearance` `appearance_id` INT NOT NULL ;
 
-CREATE TABLE `mobilerpg`.`apperance` (
+CREATE TABLE `mobilerpg`.`appearance` (
   `appearance_id` INT NOT NULL,
   `headtype` INT NOT NULL,
   `torsotype` INT NOT NULL,
@@ -66,12 +51,7 @@ CREATE TABLE `mobilerpg`.`apperance` (
 ALTER TABLE `mobilerpg`.`player` 
 ADD INDEX `appearance_id_idx` (`appearance_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`player` 
-ADD CONSTRAINT `appearance_id`
-  FOREIGN KEY (`appearance_id`)
-  REFERENCES `mobilerpg`.`apperance` (`appearance_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`location` (
   `location_id` INT NOT NULL,
@@ -88,12 +68,6 @@ ALTER TABLE `mobilerpg`.`player`
 ADD COLUMN `location_id` INT NOT NULL AFTER `inventory_id`,
 ADD INDEX `location_id_idx` (`location_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`player` 
-ADD CONSTRAINT `location_id`
-  FOREIGN KEY (`location_id`)
-  REFERENCES `mobilerpg`.`location` (`location_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
 
 CREATE TABLE `mobilerpg`.`armor` (
   `armor_id` INT NOT NULL,
@@ -109,62 +83,32 @@ CREATE TABLE `mobilerpg`.`armor` (
 ALTER TABLE `mobilerpg`.`inventory` 
 ADD INDEX `armor_id_idx` (`armor_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `armor_id`
-  FOREIGN KEY (`armor_id`)
-  REFERENCES `mobilerpg`.`armor` (`armor_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`item` (
   `item_id` INT NOT NULL,
-  `item_name` VARCHAR(15) NULL,
+  `item_name` VARCHAR(30) NULL,
   `sell_value` DECIMAL(16,2) NOT NULL DEFAULT 0,
   PRIMARY KEY (`item_id`),
   UNIQUE INDEX `item_id_UNIQUE` (`item_id` ASC) VISIBLE);
 
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `item_1`
-  FOREIGN KEY (`item_1`)
-  REFERENCES `mobilerpg`.`item` (`item_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 ALTER TABLE `mobilerpg`.`inventory` 
 ADD INDEX `item_2_idx` (`item_2` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `item_2`
-  FOREIGN KEY (`item_2`)
-  REFERENCES `mobilerpg`.`item` (`item_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 ALTER TABLE `mobilerpg`.`inventory` 
 ADD INDEX `item_3_idx` (`item_3` ASC) VISIBLE,
 ADD INDEX `item_4_idx` (`item_4` ASC) VISIBLE,
 ADD INDEX `item_5_idx` (`item_5` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `item_3`
-  FOREIGN KEY (`item_3`)
-  REFERENCES `mobilerpg`.`item` (`item_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION,
-ADD CONSTRAINT `item_4`
-  FOREIGN KEY (`item_4`)
-  REFERENCES `mobilerpg`.`item` (`item_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION,
-ADD CONSTRAINT `item_5`
-  FOREIGN KEY (`item_5`)
-  REFERENCES `mobilerpg`.`item` (`item_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`weapon` (
   `weapon_id` INT NOT NULL,
-  `weapon_name` VARCHAR(15) NULL,
+  `weapon_name` VARCHAR(30) NULL,
   `damage_amount` INT NOT NULL DEFAULT 1,
   `damage_type` VARCHAR(25) NULL,
   `durability` INT NOT NULL DEFAULT 1,
@@ -175,16 +119,11 @@ CREATE TABLE `mobilerpg`.`weapon` (
 ALTER TABLE `mobilerpg`.`inventory` 
 ADD INDEX `weapon_id_idx` (`weapon_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`inventory` 
-ADD CONSTRAINT `weapon_id`
-  FOREIGN KEY (`weapon_id`)
-  REFERENCES `mobilerpg`.`weapon` (`weapon_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`boss` (
   `boss_id` INT NOT NULL,
-  `boss_name` VARCHAR(10) NULL,
+  `boss_name` VARCHAR(30) NULL,
   `currency_value` INT NULL,
   `HP` FLOAT NOT NULL DEFAULT 100,
   `weakness` VARCHAR(25) NULL,
@@ -200,16 +139,11 @@ CREATE TABLE `mobilerpg`.`boss` (
 ALTER TABLE `mobilerpg`.`location` 
 ADD INDEX `boss_id_idx` (`boss_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`location` 
-ADD CONSTRAINT `boss_id`
-  FOREIGN KEY (`boss_id`)
-  REFERENCES `mobilerpg`.`boss` (`boss_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`enemy` (
   `enemy_id` INT NOT NULL,
-  `enemy_name` VARCHAR(15) NULL,
+  `enemy_name` VARCHAR(30) NULL,
   `currency_value` INT NULL,
   `HP` FLOAT NOT NULL DEFAULT 100,
   `weakness` VARCHAR(25) NULL,
@@ -226,16 +160,11 @@ CREATE TABLE `mobilerpg`.`enemy` (
 ALTER TABLE `mobilerpg`.`location` 
 ADD INDEX `enemy_id_idx` (`enemy_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`location` 
-ADD CONSTRAINT `enemy_id`
-  FOREIGN KEY (`enemy_id`)
-  REFERENCES `mobilerpg`.`enemy` (`enemy_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`shop` (
   `shop_id` INT NOT NULL,
-  `shop_name` VARCHAR(15) NULL,
+  `shop_name` VARCHAR(30) NULL,
   `npcs_id` INT NULL,
   PRIMARY KEY (`shop_id`),
   UNIQUE INDEX `shop_id_UNIQUE` (`shop_id` ASC) VISIBLE);
@@ -243,17 +172,12 @@ CREATE TABLE `mobilerpg`.`shop` (
 ALTER TABLE `mobilerpg`.`location` 
 ADD INDEX `shop_id_idx` (`shop_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`location` 
-ADD CONSTRAINT `shop_id`
-  FOREIGN KEY (`shop_id`)
-  REFERENCES `mobilerpg`.`shop` (`shop_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`npcs` (
   `npcs_id` INT NOT NULL,
-  `npcs_name` VARCHAR(15) NULL,
-  `speech_bubble` VARCHAR(35) NULL,
+  `npcs_name` VARCHAR(30) NULL,
+  `speech_bubble` VARCHAR(50) NULL,
   `quest_id` INT NULL,
   PRIMARY KEY (`npcs_id`),
   UNIQUE INDEX `npcs_id_UNIQUE` (`npcs_id` ASC) VISIBLE);
@@ -261,28 +185,16 @@ CREATE TABLE `mobilerpg`.`npcs` (
 ALTER TABLE `mobilerpg`.`shop` 
 ADD INDEX `npcs_id_idx` (`npcs_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`shop` 
-ADD CONSTRAINT `npcs_id`
-  FOREIGN KEY (`npcs_id`)
-  REFERENCES `mobilerpg`.`npcs` (`npcs_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+
 
 CREATE TABLE `mobilerpg`.`quest` (
   `quest_id` INT NOT NULL,
-  `quest_name` VARCHAR(15) NULL,
+  `quest_name` VARCHAR(30) NULL,
   `currency_value` INT NOT NULL DEFAULT 10,
-  `completion_condition` VARCHAR(35) NOT NULL,
+  `completion_condition` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`quest_id`),
   UNIQUE INDEX `quest_id_UNIQUE` (`quest_id` ASC) VISIBLE);
 
 ALTER TABLE `mobilerpg`.`npcs` 
 ADD INDEX `quest_id_idx` (`quest_id` ASC) VISIBLE;
 ;
-ALTER TABLE `mobilerpg`.`npcs` 
-ADD CONSTRAINT `quest_id`
-  FOREIGN KEY (`quest_id`)
-  REFERENCES `mobilerpg`.`quest` (`quest_id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
